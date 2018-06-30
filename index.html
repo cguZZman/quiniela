@@ -52,7 +52,8 @@
         function initGooglePlatform() {
             gapi.load('auth2', function() {
                 gapi.auth2.init({
-                    client_id: '832807493803-n2nog8b4fpq14o99olbous0j799nk8si.apps.googleusercontent.com'
+                    client_id: '832807493803-n2nog8b4fpq14o99olbous0j799nk8si.apps.googleusercontent.com',
+                    ux_mode: 'redirect' 
                 }).then(function(){
                     gapi.initialized = true;
                     if (gapi.onInit) {
